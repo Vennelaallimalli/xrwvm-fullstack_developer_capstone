@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 import React from "react";
 import LoginPanel from "./components/Login/Login"; // Importing the Login component
 import Register from "./components/Register/Register"; // Importing the Register components
