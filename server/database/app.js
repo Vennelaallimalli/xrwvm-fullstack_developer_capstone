@@ -15,9 +15,9 @@ const dealerships_data = JSON.parse(fs.readFileSync("dealerships.json", 'utf8'))
 mongoose.connect("mongodb://mongo_db:27017/",{'dbName':'dealershipsDB'});
 
 
-const Reviews = require('./review.js');
+const Reviews = require('./review');
 
-const Dealerships = require('./dealership.js');
+const Dealerships = require('./dealership');
 
 try {
   Reviews.deleteMany({}).then(()=>{
